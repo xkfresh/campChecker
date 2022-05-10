@@ -52,7 +52,7 @@ def checkArea(areaText):
             stsStrA = strList[13] # 2 = 8/1
             print(dateA  + ":" + stsStrA)
             dateB = "13"
-            stsStrB = strList[17] # 2 = 8/1
+            stsStrB = strList[14] # 2 = 8/1
             print(dateB  + ":" + stsStrB)
             if stsStrA == "●":
                 msg = msg + "[" + noStr + ":"  + nameStr + "] " + dateA + " "
