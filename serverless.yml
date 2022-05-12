@@ -1,0 +1,19 @@
+service: check-service
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'prod'}
+  region: ap-northeast-1 
+  profile: serverless
+  ecr:
+    images:
+      img:
+        path: ./
+        platform: linux/amd64
+
+functions:
+  hello:
+    timeout: 60
+    memorySize: 2048
+    image:
+      name: img
